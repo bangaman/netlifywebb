@@ -35,7 +35,8 @@ func Challenge(w http.ResponseWriter, r *http.Request){
                fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/showpost/challenge"))
 			}else if len(question) > 0 {
                 let.ChallengePost = template.HTML(strings.Join(GetAllQuestions(vax[0], session.Values["usersid"].(string)), ""))
-                templates.Render(w, "site/templates/showpost/question.html", let)
+                 w.Header().Set("Content-Type", "text/html")
+                fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/showpost/challenge"))
             }else{
 				fmt.Fprintf(w, "No challenge to show")
 			}
