@@ -1,0 +1,54 @@
+.options{
+    margin-top: 10px;
+}
+
+.options span{
+    padding-right: 10px;
+}
+
+.options button{
+    height: 25px;
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.support{
+    margin-top: 15px;
+}
+.support #the-option{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.support textarea{
+    width: 350px;
+    height: 60px;
+    border:1px solid #ccc;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+}
+
+.support span{
+    padding-left: 10px;
+}
+
+.support button{
+    position: relative;
+    top:-9px;
+    height: 25px;
+    background-color: cadetblue;
+    color:white;
+    font-weight: 900;
+    border:cadetblue;
+}
+
+.default{
+    padding-bottom: 5px;
+}
+
+.default span{
+    color: cadetblue;
+}

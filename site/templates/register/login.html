@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/site/fonts/webfonts/all.css" >
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/register/form.css" >
+    </head>
+    <body>
+        {{.Credentials}}
+        <div class="header">
+            <div class="child-header">
+                <div class="title-header">
+                    <span>
+                        Get Productive, Get Useful
+                    </span>
+                </div>
+
+                <div class="btn-header">
+                    <span>
+                        <a href="/login">
+                            <button style="background-color: green;color:white;border:1px solid green;font-weight: 700;">
+                                Sign In
+                            </button>
+                        </a>
+                    </span>
+
+                    <span>
+                        <a href="/register">
+                            <button>
+                                Create Account
+                            </button>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="body-form">
+            <div class="child-body-form">
+
+                <div class="name-body-form">
+                    <h3>GoAmigo</h3>
+                </div>
+
+                <div class="form-div">
+                    <form action="/login" method="post">
+                        <div class="username" style="display: flex;flex-direction: column;">
+                            <span>
+                                Username
+                            </span>
+
+                            <input type="text" name="username" >
+                        </div>
+
+                        <div class="password" style="display: flex;flex-direction: column;">
+                            <span>
+                                Password
+                            </span>
+
+                            <input type="password" name="password" >
+                        </div>
+
+                        <div class="submit-btn">
+                            <button>
+                                Get Started
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="forgot-password">
+                <span>
+                    <a href="#">
+                        Forgot Password.
+                    </a>
+
+                    <b><a href="/register" style="color: black;">Sign Up</a></b>
+                </span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="child-footer">
+                <span>
+                    <a href="#">
+                        GITHUB
+                    </a>
+                </span>
+
+                <span>
+                    <a href="#">
+                        MADE WITH <i class="fas fa-heart" style="color:red;"></i> BY <b>MA'AJI</b>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
+

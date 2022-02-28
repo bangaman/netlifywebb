@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/post/post.css"/>
+        <link rel="stylesheet" href="/site/fonts/webfonts/all.css" >
+        <script src="https://maajichallenger.netlify.app/jquery/jquery.js" ></script>
+        <script>
+            $(document).ready(function(){
+              $("#batch1").click(function(){
+                $("#thebatch").val("medal")
+                $("#showbatch").html("<div id='gift'><i class='fas fa-medal'></i></div>")
+              });
+            });
+
+            $(document).ready(function(){
+              $("#batch2").click(function(){
+                  $("#thebatch").val("trophy")
+                  $("#showbatch").html("<div id='gift'><span><i class='fas fa-trophy' style='padding-right:4px;'></i></span></div>")
+              });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="makeapost">
+
+            <div class="btn">
+                <span>
+                    <a href="/make/p/">
+                        <button >
+                            POST
+                        </button>
+                    </a>
+                </span>
+
+                <span>
+                    <a href="/make/q/">
+                        <button style="border-bottom: 1px solid cadetblue;padding-bottom: 5px;font-weight: 700;width: 200px;">
+                            Question
+                        </button>
+                    </a>
+                </span>
+            </div>
+            <div class="child-makeapost">
+                <form method="post" action="/make/q/">
+                    <div class="options">
+                        <div class="title">
+                            <h3>Add Questions With Options</h3>
+                        </div>
+    
+                        <div class="question-box">
+                            <textarea name="q" placeholder="question"></textarea>
+                        </div>
+
+                        <div class="options">
+                            <span style="display: flex;">
+                                <button>A</button>
+                                <input type="text" name="a" placeholder="A" required>
+                            </span>
+
+                            <span style="display: flex;">
+                                <button>B</button>
+                                <input type="text" name="b" placeholder="B" required>
+                            </span style="display: flex;">
+
+                            <span style="display: flex;">
+                                <button>C</button>
+                                <input type="text" name="c" placeholder="C" required>
+                            </span>
+
+                            <span style="display: flex;">
+                                <button>D</button>
+                                <input type="text" name="d" placeholder="D" required>
+                            </span>
+                        </div>
+
+                        <div class="add">
+                            <span>
+                                <input type="checkbox" name="check"> <i>Add reason for answer</i>
+                            </span>
+
+                            <div id="default">
+                                <span>
+                                    Enter answer to be displayed after attempt, A, B, C or D
+                                </span>
+
+                                <input type="text" name="default" placeholder="answer" required>
+                            </div>
+
+                            <div id="selector-child2">
+                                <select name='subject'> 
+                                    <option value='technology'>Technology</option> 
+                                    <option value='health'>Health</option> 
+                                    <option value='health'>Art</option> 
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="submit">
+                            <span>
+                                <button >Ask Question</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+

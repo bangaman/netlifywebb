@@ -1,0 +1,118 @@
+html,body{
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+.header{
+    padding: 20px 20px 0px 20px;
+}
+
+.child-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-header span{
+    font-weight: 600;
+}
+
+.btn-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-header button{
+    height: 30px;
+    padding:0px 15px 0px 15px;
+    background-color: #fafafa;
+    border:1px solid #ccc;
+}
+
+.body-form{
+    width: 300px;
+    margin:auto;
+    margin-top: 40px;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    background-color: white;
+    border-radius: 4px;
+}
+
+.child-body-form{
+    width: fit-content;
+    margin:auto;
+}
+
+.name-body-form{
+    width: fit-content;
+    margin:auto;
+}
+
+.form-div form span{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.form-div form input[type=text], input[type=email],input[type=password]{
+    height: 30px;
+    width: 250px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+}
+
+.submit-btn{
+    margin-top: 15px;
+}
+
+.submit-btn button{
+    height: 35px;
+    width: 250px;
+    background-color: #ccc;
+    border:1px solid #ccc;
+    font-weight: 700;
+}
+
+.agreement-form{
+    width: 250px;
+    margin: auto;
+}
+.agreement-form span{
+    font-size: 12px;
+}
+
+.forgot-password{
+    width: fit-content;
+    margin:auto;
+}
+
+.forgot-password b{
+    padding-left: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+    /* color: white; */
+    /* text-align: center; */
+}
+
+.child-footer{
+    width: fit-content;
+    margin:auto;
+    padding:10px 0px 5px 0px;
+}
+
+.child-footer a {
+    text-decoration: none;
+    color:black;
+}
+
+.child-footer span{
+    padding:0px 15px 0px 15px;
+}
+
+

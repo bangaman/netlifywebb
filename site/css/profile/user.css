@@ -1,0 +1,133 @@
+
+.profile-page{
+    width: 600px;
+    margin:auto;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    border:1px solid #ccc;
+}
+
+.top-details{
+    width: fit-content;
+    margin:auto;
+    margin-top:20px;
+}
+
+.profile button{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: black;
+    border:1px solid black;
+    color:white;
+}
+
+.username{
+    margin-top:10px;
+}
+
+.username p{
+    margin-top: 0px;
+    font-weight: 600;
+    text-align:center ;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.into-form{
+    margin-top: -7px;
+}
+
+.into-form #into-div{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.into-form #into-div span{
+    padding:0px 10px 0px 10px;
+}
+
+.into-form button{
+    background-color: black;
+    border:1px solid black;
+    color:white;
+    font-weight: 800;
+    font-size: 10px;
+    height:20px;
+    border-radius: 2px;
+}
+
+.into-result #into-result{
+    display: flex;
+    width: fit-content;
+    margin:auto;
+}
+
+.into-result #into-result form{
+    padding-right: 5px;
+}
+
+.into-form-details{
+    display: flex;
+    border:1px solid #ccc;
+    padding:0px 5px 0px 5px;
+    border-radius: 4px;
+}
+
+.into-form-details i{
+    font-size: 13px;
+}
+
+.into-form-details span{
+    padding:0px 3px 0px 3px;
+}
+
+.email-form #email-div{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.email-form #email-div span{
+    padding:0px 5px 0px 5px;
+}
+
+.email-form button{
+    background-color: black;
+    border:1px solid black;
+    color:white;
+    font-weight: 800;
+    font-size: 10px;
+    height:20px;
+    border-radius: 2px;
+}
+
+.email-mode{
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.email-mode span{
+    font-size: 12px;
+}
+
+.child-user-tags{
+    width: fit-content;
+    margin:auto;
+}
+
+.child-user-tags span{
+    padding:15px 0px  0px 15px;
+}
+
+.child-user-tags button{
+    background-color: white;
+    border:1px solid white;
+    width: 280px;
+}
+

@@ -1,0 +1,111 @@
+html,body{
+    margin:auto;
+    background-color: black;
+}
+
+.home-page-div{
+    /* width: 400px; */
+    margin:auto;
+    background-color:white;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    padding: 10px 20px 20px 20px;
+}
+
+
+.app-name{
+    margin-top: 10px;
+}
+
+.child-app-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-app-name #app-name-title{
+    display: flex;
+}
+
+.child-app-name #app-name-title span{
+    font-size: 22px;
+}
+
+.child-app-name #app-name-greet{
+    position: relative;
+    top:5px;
+    left: 30px;
+    
+}
+
+.child-app-name #profile button{
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: cadetblue;
+    border:cadetblue;
+    color: white;
+}
+
+.top-details{
+    width: fit-content;
+    margin:auto;
+}
+
+.top-details #top-details-title{
+    width: fit-content;
+    margin:auto;
+}
+
+.top-details #top-details-btn button{
+    height: 35px;
+    width: 270px;
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: cadetblue;
+    border:cadetblue;
+    color: white;
+    border-radius: 4px;
+}
+
+.top-details #top-details-btn img{
+    position: relative;
+    top:2px;
+    right:4px;
+    height:14px;
+}
+
+.btn-click{
+    width: fit-content;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.btn-click span{
+    padding-right: 15px;
+}
+
+.btn-click button{
+    background-color: white;
+    border:1px solid white;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .child-home-page-div{
+        width: 500px;
+        margin:auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}

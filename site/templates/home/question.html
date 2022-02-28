@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/home/home.css"/>
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/home/post.css"/>
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/home/publish.css"/>
+        <link rel="stylesheet" href="/site/fonts/webfonts/all.css" >
+    </head>
+    <body>
+     
+        <div class="home-page-div">
+
+            <div class="child-home-page-div">
+
+                <div class="app-name">
+                    <div class="child-app-name">
+                        <div id="app-name-title">
+                            <span>
+                                <b>
+                                    ChallengeHub
+                                </b>
+                            </span>
+
+                            <div id="app-name-greet">
+                                <i>
+                                    Welcome <b>{{.Username}}</b>
+                                </i>
+                            </div>
+                        </div>
+
+                       
+
+                        <div id="profile">
+                            <span>
+                                <button>
+                                    {{.Profile}}
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-details">
+
+                    <div id="top-details-title">
+                        <h3>Start Or Join A Challenge</h3>
+                    </div>
+
+                    <div id="top-details-btn">
+                        <span>
+                            <a href="/make/p/">
+                                <button><i class="fas fa-pen"></i> Get Started </button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-click">
+                <dv id="challenge">
+                    <span>
+                        <a href="/" style="text-decoration: none;color: black;">
+                            <button >
+                                CHALLENGES
+                            </button>
+                        </a>
+                        
+                    </span>
+                </dv>
+
+                <dv id="challenge">
+                    <span>
+                        <a href="/q" style="text-decoration: none;color: black;">
+                            <button style="border-bottom: 2px solid cadetblue;padding-bottom: 5px;font-weight: 700;">
+                                QUESTIONS
+                            </button>
+                        </a>
+                    </span>
+                </dv>
+            </div>
+
+            <div class="post-show">
+                {{.HomePost}}
+            </div>
+        </div>
+    </body>
+</html>
+
+
+

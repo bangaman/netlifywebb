@@ -1,0 +1,156 @@
+.child-post-section{
+    width: 350px;
+    padding: 10px 10px 10px 10px;
+    /* border-radius: 10px; */
+}
+
+.post-top-details{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.post-section-image{
+    display: flex;
+}
+
+.post-section-image #post-pic button{
+    height: 37px;
+    width: 37px;
+    border-radius: 100px;
+    background-color: cadetblue;
+    border:1px solid cadetblue;
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.post-section-image #post-username{
+    padding-left: 10px;
+}
+
+.post-section-image #post-username span{
+    text-transform: capitalize;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.post-section-image #category-select{
+    padding-top:2px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+.post-section-image #post-date{
+    padding-left: 10px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-top: 7px;
+}
+
+.post-section-join button{
+    background-color: black;
+    border:1px solid black;
+    color: white;
+    font-weight: 900;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+.post-medal{
+    width: 140px;
+    margin:auto;
+    margin-top: 5px;
+    height: 100px;
+    border:1px solid #ccc;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.child-post-medal{
+    width: fit-content;
+    margin:auto;
+}
+
+.child-post-medal i{
+    font-size: 100px;
+}
+
+.post-tagg{
+    width: fit-content;
+    margin:auto;
+}
+
+
+.post-tagg-medal{
+    width: fit-content;
+    margin:auto;
+    margin-top: 4px;
+}
+
+.post-tagg span{
+    font-size: 23px;
+}
+
+.post-body{
+    width: 380px;
+    padding: 10px 10px 10px 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.post-like-section{
+    margin-top: 15px;
+}
+
+.child-post-like-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-post-like-section #first span{
+    padding-right: 5px;
+}
+
+.child-post-like-section #first button{
+    background-color: white;
+    border:1px solid #ccc;
+    height: 23px;
+    border-radius: 10px;
+}
+
+.child-post-like-section #second{
+    padding-right: 10px;
+}
+
+.child-post-like-section #second button{
+    height: 30px;
+    background-color: cadetblue;
+    border:1px solid cadetblue;
+    color:white;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.post-write-div{
+    margin-top: 5px;
+}
+
+.post-write-div input[type=text]{
+    height: 60px;
+    width: 400px;
+    border:1px solid black;
+    border-radius: 4px;
+    padding-left: 15px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .child-post-section{
+        width: 500px;
+        margin:auto;
+        padding-left: 20px;
+    }
+}

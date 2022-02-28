@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/register/form.css" >
+        <link rel="stylesheet" href="/site/fonts/webfonts/all.css" >
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="child-header">
+                <div class="title-header">
+                    <span>
+                        Get Productive, Get Useful
+                    </span>
+                </div>
+
+                <div class="btn-header">
+                    <span>
+                        <a href="/login">
+                            <button>
+                                Sign In
+                            </button>
+                        </a>
+                    </span>
+
+                    <span>
+                        <a href="/register">
+                            <button style="background-color: green;color:white;border:1px solid green;font-weight: 700;">
+                                Create Account
+                            </button>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-form">
+            <div class="child-body-form">
+
+                <div class="name-body-form">
+                    <h3>GoAmigo</h3>
+                </div>
+                <div class="form-div">
+                    <form action="/register" method="post">
+                        {{.User_err}}
+                        <div class="username" style="display: flex;flex-direction: column;">
+                            <span>
+                                Username
+                            </span>
+
+                            <input type="text" name="username" >
+                        </div>
+                        
+                        {{.Email_err}}
+                        <div class="Email" style="display: flex;flex-direction: column;">
+                            <span>
+                                Email
+                            </span>
+
+                            <input type="email" name="email" >
+                        </div>
+
+                        {{.Password}}
+                        <div class="password" style="display: flex;flex-direction: column;">
+                            <span>
+                                Password
+                            </span>
+
+                            <input type="password" name="password" >
+                        </div>
+
+                        <div class="submit-btn">
+                            <button>
+                                Get Started
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="agreement-form">
+                <span>
+                    By signing up, you agree to our Terms , Data Policy and Cookies Policy
+                </span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="child-footer">
+                <span>
+                    <a href="#">
+                        GITHUB
+                    </a>
+                </span>
+
+                <span>
+                    <a href="#">
+                        MADE WITH <i class="fas fa-heart" style="color:red;"></i> BY <b>MA'AJI</b>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
+

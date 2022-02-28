@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maajichallenger.netlify.app/css/post/post.css" >
+        <link rel="stylesheet" href="/site/fonts/webfonts/all.css" >
+        <script src="https://maajichallenger.netlify.app/jquery/jquery.js" ></script>
+        <script>
+            $(document).ready(function(){
+              $("#batch1").click(function(){
+                $("#thebatch").val("medal")
+                $("#showbatch").html("<div id='gift'><i class='fas fa-medal'></i></div>")
+              });
+            });
+
+            $(document).ready(function(){
+              $("#batch2").click(function(){
+                  $("#thebatch").val("trophy")
+                  $("#showbatch").html("<div id='gift'><span><i class='fas fa-trophy' style='padding-right:4px;'></i></span></div>")
+              });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="makeapost">
+
+            <div class="btn">
+                <span>
+                    <a href="/make/p/">
+                        <button style="border-bottom: 1px solid cadetblue;padding-bottom: 5px;font-weight: 700;width: 200px;">
+                            POST
+                        </button>
+                    </a>
+                </span>
+
+                <span>
+                    <a href="/make/q/">
+                        <button>
+                            Question
+                        </button>
+                    </a>
+                </span>
+            </div>
+            <div class="child-makeapost">
+                <form method="post" action="/make/p/">
+                    <div class="form-details">
+                        <div class="select-btn">
+                            <div class="selector">
+                                <div id="selector-child1">
+                                    <span>Visibility</span>
+                                </div>
+                                
+                                <div id="selector-child2">
+                                    <select name='type'> 
+                                        <option value='open'>Open Challenge</option> 
+                                        <option value='closed'>Close Challenge</option> 
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="selector">
+                                <div id="selector-child1">
+                                    <span>Time</span>
+                                </div>
+                                
+                                <div id="selector-child2">
+                                    <select name='time'> 
+                                        <option value='1week'>1 Week</option> 
+                                        <option value='2week'>2 Weeks</option>
+                                        <option value="month">a Month</option> 
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="selector">
+                                <div id="selector-child1">
+                                    <span>Category</span>
+                                </div>
+                                
+                                <div id="selector-child2">
+                                    <select name='category'> 
+                                        <option value='technology'>Technology</option> 
+                                        <option value='education'>Education</option> 
+                                        <option value='health'>Health</option> 
+                                        <option value='art'>Art</option> 
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="add-medal">
+                            <div id="add-medal-title">
+                                <span>Add a medal</span>
+                            </div>
+
+                            <div id="add-medal-about">
+                                <span><i id="batch1" class="fas fa-trophy"></i></span>
+                                <span><i  id="batch2" class="fas fa-medal"></i></span>
+                                <span><div id="showbatch"></div></span>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <div id="textarea">
+                                <textarea placeholder="About Challenge" name="tips"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="publish">
+                            <button>
+                                Publish
+                            </button>
+                        </div> 
+
+                    </div>
+
+                    <!-- <div class="box" style="display: flex;">
+                        <div class="add-medal">
+                            <div id="add-medal-title" style="width: fit-content;margin:auto;">
+                                <h3>Add Medal</h3>
+                            </div>
+        
+                            <div id="add-medal-medals" style="width: fit-content;margin:auto;display: flex;">
+                                <span>
+                                    <div id="batch1">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                </span>
+        
+                                <span>
+                                    <div id="batch2">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="type">
+                            <span style="display: flex;flex-direction: column;">
+                                <i class="fas fa-eye"></i>
+                                <select name='type'> 
+                                    <option value='open'>Open Challenge</option> 
+                                    <option value='closed'>Close Challenge</option> 
+                                </select>
+                            </span>
+    
+                            <span style="display: flex;flex-direction: column;">
+                                <i class="fas fa-clock"></i>
+                                <select name='time'> 
+                                    <option value='1week'>1 Week</option> 
+                                    <option value='2week'>2 Weeks</option>
+                                    <option value="month">a Month</option> 
+                                </select>
+                            </span>
+
+                            <span style="display: flex;flex-direction: column;">
+                                <div style="padding-top: 5px;padding-bottom: 5px;width: fit-content;margin:auto;" >Category</div>
+                                <select name='category'> 
+                                    <option value='technology'>Technology</option> 
+                                    <option value='education'>Education</option> 
+                                    <option value='health'>Health</option> 
+                                    <option value='art'>Art</option> 
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div id="textarea">
+                            <textarea placeholder="About Challenge" name="tips"></textarea>
+                        </div>
+                    </div>
+                    <input style="display: none;" type="text" id="thebatch" name="thebatch">
+                    <div id="showbatch">
+
+                    </div>
+
+                    <div class="publish">
+                        <button>
+                            Publish
+                        </button>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+

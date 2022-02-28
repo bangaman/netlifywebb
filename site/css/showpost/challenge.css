@@ -1,0 +1,125 @@
+html,body{
+    background-color: black;
+}
+
+.child-post-section{
+    width: 350px;
+    margin:auto;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+.post-top-details{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.post-section-image{
+    display: flex;
+}
+
+.post-section-image #post-pic button{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: cadetblue;
+    border:1px solid cadetblue;
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.post-section-image #post-username{
+    padding-left: 10px;
+}
+
+.post-section-image #post-username span{
+    text-transform: capitalize;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.post-section-image #category-select{
+    padding-top:2px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+.post-section-image #post-date{
+    padding-left: 10px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-top: 7px;
+}
+
+.post-section-join button{
+    color:white;
+    background-color: cadetblue;
+    border:1px solid cadetblue;
+    height: 30px;
+    font-weight: bolder;
+    padding: 3px 15px 3px 15px;
+    border-radius: 4px;
+}
+
+.post-body-title{
+    width: fit-content;
+    margin:auto;
+}
+
+
+.post-like-section{
+    margin-top: 15px;
+}
+
+.child-post-like-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-post-like-section #first span{
+    padding-right: 5px;
+}
+
+.child-post-like-section #first button{
+    background-color: white;
+    border:1px solid #ccc;
+    height: 23px;
+    border-radius: 10px;
+}
+
+.child-post-like-section #second button{
+    height: 25px;
+    background-color: black;
+    border:1px solid black;
+    color:white;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.write-up{
+    margin-top: 20px;
+}
+
+.write-up textarea{
+    height: 40px;
+    width: 500px;
+    height: 100px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .child-post-section{
+        width: 550px;
+        padding: 10px 10px 10px 50px;
+    }
+
+    .post-section-join button{
+        width: 200px;
+    }
+}
+

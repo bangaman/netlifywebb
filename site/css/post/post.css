@@ -1,0 +1,130 @@
+html,body{
+    background-color: #fafafa;
+}
+
+.btn{
+    width: fit-content;
+    margin:auto;
+}
+
+.btn a{
+    text-decoration: none;
+    color:black;
+}
+
+.btn span{
+    padding-right: 20px;
+}
+
+.btn button{
+    background-color: #fafafa;
+    border:1px solid #fafafa;
+}
+
+.child-makeapost{
+    width: 500px;
+    margin:auto;
+    background-color: white;
+    padding: 20px 10px 20px 10px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+}
+
+.form-details{
+    width: fit-content;
+    margin:auto;
+}
+
+.select-btn{
+    display: flex;
+}
+
+.selector #selector-child1{
+    padding-bottom: 5px;
+    width: fit-content;
+    margin: auto;
+}
+
+.selector #selector-child2{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.selector #selector-child2 select{
+    height: 25px;
+    border:1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.add-medal{
+    width: fit-content;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.add-medal #add-medal-title{
+    width: fit-content;
+    margin:auto;
+    font-weight: 600;
+}
+
+
+.add-medal #add-medal-about span{
+    padding-right: 10px;
+}
+
+.add-medal #add-medal-about{
+    display: flex;
+    width: fit-content;
+    margin:auto;
+}
+
+.add-medal #add-medal-about i{
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#gift i{
+    position: relative;
+    right: 1px;
+    top:-10px;
+    font-size: 35px;
+    color:goldenrod;
+}
+
+#gift{
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+.details{
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.details textarea{
+    width: 320px;
+    height: 60px;
+    border:1px solid #ccc;
+    padding: 10px 10px 0px 10px;
+}
+
+.publish {
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.publish button{
+    width: 320px;
+    height: 25px;
+    background-color: cadetblue;
+    border:cadetblue;
+    color:white;
+    font-weight: 900;
+}

@@ -1,0 +1,61 @@
+.publish-section{
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border:1px solid #ccc;
+}
+
+.publish-top-details{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.publish-section-image{
+    display: flex;
+}
+
+.publish-section-image #publish-pic button{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: cadetblue;
+    color:white;
+    font-weight: bolder;
+    border:cadetblue;
+    text-transform: capitalize;
+}
+
+.publish-section-image #publish-username {
+    margin-left: 10px;
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+
+.publish-section-medal{
+    padding-left: 10px;
+}
+
+.publish-section-medal button{
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding-top: 3px;
+}
+
+/* for question css */
+
+.option-selected{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+/*  end question */
+
+
+@media only screen and (min-width: 600px) {
+    .publish-section {
+        border:1px solid #ccc;
+        width: 400px;
+    }
+}
