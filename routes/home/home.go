@@ -49,9 +49,8 @@ func HomeQuestion(w http.ResponseWriter, r *http.Request){
             let.Profile = let.Username[0:1]
             getpost.HomeQuestion(session.Values["usersid"].(string))
             let.HomePost = template.HTML(strings.Join(getpost.HomePosts, ""))
-            templates.Render(w, "site/templates/home/question.html", let)
-            // w.Header().Set("Content-Type", "text/html")
-		// fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/register/login"))
+            w.Header().Set("Content-Type", "text/html")
+	    fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/home/question"))
       }else{
             http.Redirect(w, r, "/login", http.StatusSeeOther)
       }
