@@ -38,9 +38,8 @@ func PostQuestion(w http.ResponseWriter, r *http.Request) {
 		if let.Err == true{
 			fmt.Fprintf(w, "Something happened")
 		}else{
-			templates.Render(w, "site/templates/post/question.html", nil)
-            // w.Header().Set("Content-Type", "text/html")
-		// fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/post/post"))
+			w.Header().Set("Content-Type", "text/html")
+			fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/post/question"))
 		}
 	}else{
 		http.Redirect(w, r, "/login", http.StatusSeeOther)
