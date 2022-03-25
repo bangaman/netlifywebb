@@ -7,7 +7,7 @@
   GO_IMPORT_PATH = "https://github.com/bangaman/netlifywebb"
  
 [[redirects]]
-  from = "/*"
+  from = "/home/*"
   to = ".netlify/functions/hello-lambda/:splat"
   status = 200
 
