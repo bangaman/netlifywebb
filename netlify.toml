@@ -8,6 +8,6 @@
   
   
 [[redirects]]
-  from = "/*"
+  from = "*"
   to = "/.netlify/functions/hello-lambda/"
   status = 200
