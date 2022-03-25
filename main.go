@@ -33,7 +33,7 @@ func main() {
 	}
 
 	http.Handle("/site/", http.StripPrefix("/site/", http.FileServer(http.Dir("site"))))
-	http.HandleFunc("/", home.Home)
+	http.HandleFunc("", home.Home)
 	http.HandleFunc("/q", home.HomeQuestion)
 	http.HandleFunc("/login", register.Login)
 	http.HandleFunc("/logout", logout.Logout)
