@@ -5,4 +5,9 @@
 [build.environment]
   # Change this path with the path to your repository
   GO_IMPORT_PATH = "https://github.com/bangaman/netlifywebb"
-
+  
+  
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/hello-lambda/:splat"
+  status = 200
