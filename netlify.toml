@@ -8,6 +8,6 @@
   
   
 [[redirects]]
-  from = "/api/*"
+  from = "/*"
   to = "/.netlify/functions/hello-lambda/:splat"
   status = 200
