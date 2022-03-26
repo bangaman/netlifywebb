@@ -22,19 +22,36 @@ func Home(w http.ResponseWriter, r *http.Request){
       let := HomeStruct{}
       getpost := showpost.ShowPostStruct{}
       session, _ := mungo.Store.Get(r, "session")
+	
+      if session.Values["username"] != nil {
+            if len(session.Values["username"].(string)) > 1{
+                  let.Username = session.Values["username"].(string)
+		   let.Profile = let.Username[0:1]
 
-      if len(session.Values["username"].(string)) > 1{
-            let.Username = session.Values["username"].(string)
-            let.Profile = let.Username[0:1]
-
-            getpost.HomeChallenge(session.Values["usersid"].(string))
-            let.HomePost = template.HTML(strings.Join(getpost.HomePosts, ""))
+                   getpost.HomeChallenge(session.Values["usersid"].(string))
+                   let.HomePost = template.HTML(strings.Join(getpost.HomePosts, ""))
             
-            w.Header().Set("Content-Type", "text/html")
-		fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/home/home"))
+                  w.Header().Set("Content-Type", "text/html")
+		  fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/home/home"))
+            }else{
+                  http.Redirect(w, r, "/login", http.StatusSeeOther)
+            }
       }else{
             http.Redirect(w, r, "/login", http.StatusSeeOther)
       }
+
+//       if len(session.Values["username"].(string)) > 1{
+//             let.Username = session.Values["username"].(string)
+//             let.Profile = let.Username[0:1]
+
+//             getpost.HomeChallenge(session.Values["usersid"].(string))
+//             let.HomePost = template.HTML(strings.Join(getpost.HomePosts, ""))
+            
+//             w.Header().Set("Content-Type", "text/html")
+// 		fmt.Fprintf(w, templates.HTML(let, "https://maajichallenger.netlify.app/templates/home/home"))
+//       }else{
+//             http.Redirect(w, r, "/login", http.StatusSeeOther)
+//       }
 }
 
 
