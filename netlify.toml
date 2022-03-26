@@ -9,5 +9,5 @@
   
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/hello-lambda/:splat"
+  to = "/.netlify/functions/hello-lambda/"
   status = 200
